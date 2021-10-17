@@ -4,8 +4,8 @@ const conta = () => {
     return nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'ntlooknetfs@gmail.com',
-            pass: 'pojaofutoyzpwxhs'
+            user: '',
+            pass: ''
         }
     })
 }
@@ -15,7 +15,7 @@ const email = async ({ para, titulo, html }) => {
 
     const retorno = await transporter.sendMail({
         from: '"Fecitec" <fecitec@ufpr.br>',
-        to: para,
+        to: 'fecite.ufpr@gmail.com, ' + para,
         subject: titulo,
         html: html
     })

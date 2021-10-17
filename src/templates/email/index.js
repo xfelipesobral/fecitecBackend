@@ -8,7 +8,15 @@ class Email {
     }
 
     paragrafo(texto) {
-        this.html += `<p>${texto}</p>`
+        this.html += `<p style="font-size:1rem; margin: 0px">${texto}</p>`
+    }
+
+    titulo(texto) {
+        this.html += `<h1>${texto}</h1>`
+    }
+
+    linha() {
+        this.html += `<div style="height: 20px"></div>`
     }
 
     imprimir() {
