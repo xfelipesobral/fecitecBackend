@@ -15,7 +15,7 @@ const email = async ({ para, titulo, html }) => {
 
     const retorno = await transporter.sendMail({
         from: '"Fecitec" <fecitec@ufpr.br>',
-        to: 'fecite.ufpr@gmail.com, ' + para,
+        to: 'fecitec.ufpr@gmail.com, ' + para,
         subject: titulo,
         html: html
     })

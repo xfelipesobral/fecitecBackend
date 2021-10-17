@@ -38,7 +38,9 @@ const contato = (request, response) => {
     .then(() => {
         response.status(200).send()
     })
-    .catch(() => {
+    .catch((erro) => {
+        console.log(erro)
+        
         response.status(500).json({
             erro: 'Erro interno, tente novamente mais tarde.'
         })

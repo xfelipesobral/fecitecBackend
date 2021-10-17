@@ -5,7 +5,7 @@ const cors = require('cors')
 const app = express()
 
 app.use(express.json())
-app.use(cors({ origin: '*', exposedHeaders: '*' }))
+app.use(cors({ origin: 'http://www.fecitec.ufpr.br', exposedHeaders: '*' }))
 app.use('/api', rotas)
 
 app.listen(process.env.PORT || 3300, () => {
